@@ -10,7 +10,7 @@ img {
 }
 
 header{
-	background-color: rgb(187, 187, 187);
+	background-color: rgb(216, 216, 216);
 	color: black;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -21,7 +21,8 @@ body{
 	background-repeat: no-repeat;
   	background-attachment: fixed;
 	background-size: 100%;
-	margin: 0 15%;
+	margin: 0 10%;
+	box-shadow: 0px 0px 20px rgb(78, 78, 78);
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -40,17 +41,19 @@ footer{
 #cabecalho_titulo{
 	display: flex;
 	flex-direction: row;
-	height: 80px;
+	height: 100px;
 }
 
 #cabecalho_titulo h1{
 	color: black;
 	padding: 20px;
+	font-size: 40px;
+	text-shadow: 2px 2px 3px white;
 }
 
 #cabecalho_titulo img{
 	height: 60px;
-	padding: 10px 25px 10px 0;
+	padding: 20px 25px 10px 0;
 }
 
 #cabecalho_capa{
@@ -76,27 +79,23 @@ footer{
 }
 
 #nav_menu a:hover {
+	transition: 0.2s;
 	color: white;
-	background-color: rgb(112, 112, 112);
+	font-size: 120%;
+	padding: 12px 12px;
+	background-color: rgb(144, 144, 144);
 }
 
-#principal{
 
-	padding: 5px 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: white;
-}
 
 #principal h1{
 	text-align: center;
 	padding: 20px;
 	color: rgb(26, 31, 51);
 	text-shadow: 2px 2px 2px rgb(163, 163, 163);
-	font-size: 40px;
-}
 
+}
+/*
 #principal h2{
 	text-align: center;
 	font-size: 28px;
@@ -111,29 +110,8 @@ footer{
 	margin-bottom: 30px;
 	color: rgb(95, 95, 95);
 
-}
+}*/
 
-#principal h4{
-	font-weight: normal;
-	font-size: 10px;
-	color: rgb(95, 95, 95);
-
-}	
-
-#principal h6{
-	text-align: center;
-	font-weight: normal;
-	padding: 20px 0 0 0;
-	color: rgb(95, 95, 95);
-
-}
-#principal h6 a{
-	color: rgb(95, 95, 95);
-}
-
-#principal p{
-	text-align: justify;
-}
 
 
 #sobre{
@@ -163,31 +141,74 @@ footer{
 
 }
 
-.bloco{
-	background-color: white;
-	padding: 40px;
-	margin: 10px;
-	border: 3px;
-	border-style: ridge;
-	border-color: rgb(233, 233, 233);
-}
 
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 56.25%;
 	height: 0;
 }
 
 .videoWrapper iframe {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+	top: 10px;
+	left: 2.5%;
+	width: 95%;
 	height: 100%;
+	border-radius: 10px;
+	
 }
 
 .audioWrapper {
 	display: block;
 	margin: 0 auto;
-	width: 100%;
+	width: 95%;
+	position: relative;
+	bottom: 5px;
+}
+
+.flex-container{
+	padding-top: 30px;
+  	display: flex;
+  	flex-wrap: wrap;
+	background-color: #f6f6f6;
+	justify-content: space-evenly;
+}
+
+
+.flex-container > div {
+	background-color: rgb(255, 255, 255);
+	width: 30%;
+	margin: 15px 0;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px rgb(190, 190, 190);
+	transition: all .2s ease-in-out;
+}
+
+.flex-container > div:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+}
+
+.flex-container div a{
+	text-decoration: none;
+}
+
+.flex-container div img {
+	width: 95%;
+	margin: 10px auto;
+	border-radius: 10px;
+	height: calc(13.2vw);
+}
+
+.flex-container div h3 {
+	margin: 20px 15px;
+	color: black;
+	margin
+
+}
+
+.flex-container div p {
+	color: rgb(56, 56, 56);
+	margin: 10px 10px 30px 10px;
 }
