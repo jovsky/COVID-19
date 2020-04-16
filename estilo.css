@@ -21,8 +21,8 @@ header{
 }
 
 body{
-	background-color: rgb(88, 50, 50);
-	background-image: url(background.jpg);
+	background-color: rgb(150, 150, 150);
+	background-image: url(imagens/background.jpg);
 	background-repeat: no-repeat;
   	background-attachment: fixed;
 	background-size: 100%;
